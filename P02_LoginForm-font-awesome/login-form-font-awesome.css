@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:700|Open+Sans:400,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #927057;
+    color: #ffffff;
+    padding: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    position: relative;
+    width: 470px;
+    margin: 152px auto 0;
+    padding: 40px 32px 38px;
+    background: #d5c395;
+}
+
+.image-container {
+    position: absolute;
+    top: -102px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.image-container img {
+    display: block;
+    border: 5px solid #d5c395;
+    height: 73px;
+    width: 78px;
+    object-fit: cover;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #d5c395;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.input-container i {
+    position: absolute;
+    left: 8px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    color: #927057;
+}
+
+input[type="text"],
+input[type="password"] {
+    outline: none;
+    border: none;
+    background: #efe1c4;
+    padding: 5px 10px 5px 32px;
+    width: 100%;
+    font-size: 0.75em;
+    color: #927057;
+    border-radius: 4px;
+    display: block;
+}
+
+input[type="submit"] {
+    outline: none;
+    border: none;
+    background: #927057;
+    padding: 7px;
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #d5c395;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    font-size: 0.6em;
+    color: #EFE1C4;
+    text-align: center;
+    margin-top: 10px;
+}
